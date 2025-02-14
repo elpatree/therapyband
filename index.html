@@ -43,6 +43,33 @@
             font-size: 2em;
             margin: 0 15px;
         }
+        /* Centering the button */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Styling the button */
+        .button {
+            max-width: 250px;
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 18px;
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            cursor: pointer;
+            text-align: center;
+            transition: transform 0.1s ease-in-out;
+        }
+
+        /* Click animation */
+        .button:active {
+            transform: scale(0.9);
+        }
     </style>
 </head>
 <body>
@@ -56,7 +83,10 @@
             On aurait besoin d’un psy mais l’attente est trop longue. Pour se réparer, on cover du punk-emo des années 2000.</p>
             <p>On est Therapy<br>
             Le quick fix dont tout le monde a besoin</p>
-            <h1><a href="mailto:booking@therapyband.ca">BOOKING</a></h1>
+            <h1></h1>
+            <div class="button-container">
+                <a href="mailto:booking@therapyband.ca" class="button">BOOKING</a>
+            </div>
         </div>
         
         <div class="social-links">
